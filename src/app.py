@@ -4,7 +4,7 @@ from flaskext.mysql import MySQL
 
 app = Flask(__name__)
 
-app.config.from_object(Development)
+app.config.from_object(Build)
 mysql = MySQL(app)
 
 def tuple_to_dict(tup):
